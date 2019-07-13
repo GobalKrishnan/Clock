@@ -1,60 +1,58 @@
-# Clock
-program  in java
 
-import javax.swing.ImageIcon; <br>
-import javax.swing.JFrame;<br>
-import javax.swing.UIManager;<br>
-import javax.swing.UnsupportedLookAndFeelException;<br>
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
-import gki.clock.CircleClock;<br>
-import gki.clock.ClockListener;<br>
+import gki.clock.CircleClock;
+import gki.clock.ClockListener;
 
-public class Test extends JFrame { <br>
-   public Test() { <br>
+public class Test extends JFrame{
+   public Test(){
 	   
 	   
-	    CircleClock c=new CircleClock();<br>
-	    c.setRadius(150);<br>
-	    c.setLocation(0,100);<br>
+	    CircleClock c=new CircleClock();
+	    c.setRadius(150);
+	    c.setLocation(0,100);
 	    
 	   
-	    add(c);<br>
+	    add(c);
 	    
-	    c.addClockListener ( new ClockListener() {<br>
+	    c.addClockListener(new ClockListener() {
 			
-			@Override<br>
-			public void time(int hour, int minute, int second, int milliSecond, String period) {<br>
-				// TODO Auto-generated method stub<br>
-				System.out.println(hour+":"+minute+":"+second+":"+milliSecond+" "+period);<br>
+			@Override
+			public void time(int hour, int minute, int second, int milliSecond, String period) {
+				// TODO Auto-generated method stub
+				System.out.println(hour+":"+minute+":"+second+":"+milliSecond+" "+period);
 
-			}<br>
+			}
 
-			@Override<br>
-			public void alarm(boolean a) {<br>
-				// TODO Auto-generated method stub<br>
-				System.out.println(a);<br>
-			}<br>
+			@Override
+			public void alarm(boolean a) {
+				// TODO Auto-generated method stub
+				System.out.println(a);
+			}
 			
 			
-		}) ;<br>
+		});
 	    
-	    setVisible(true);<br>
-    	setIconImage(new ImageIcon(getClass().getResource("/gki/clock/logo.png")).getImage());<br>
-        setTitle("Gobal Krishnan V");<br>
-	    setDefaultCloseOperation(EXIT_ON_CLOSE);<br>
-	    setSize(500,500);<br>
-   }<br>
-	public static void main(String[] args) { <br>
-		// TODO Auto-generated method stub <br>
+	    setVisible(true);
+    	setIconImage(new ImageIcon(getClass().getResource("/gki/clock/logo.png")).getImage());
+        setTitle("Gobal Krishnan V");
+	    setDefaultCloseOperation(EXIT_ON_CLOSE);
+	    setSize(500,500);
+   }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
       
-		try { <br>
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());<br>
-		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException<br>
-				| UnsupportedLookAndFeelException e) {<br>
-			// TODO Auto-generated catch block<br>
-			e.printStackTrace();<br>
-		} <br>
-		new Test();<br>
-	}<br>
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+				| UnsupportedLookAndFeelException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		new Test();
+	}
 
-}<br>
+}
