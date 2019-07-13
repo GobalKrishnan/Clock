@@ -9,8 +9,8 @@ import javax.swing.UnsupportedLookAndFeelException;<br>
 import gki.clock.CircleClock;<br>
 import gki.clock.ClockListener;<br>
 
-public class Test extends JFrame{<br>
-   public Test(){<br>
+public class Test extends JFrame{ <br>
+   public Test(){ <br>
 	   
 	   
 	    CircleClock c=new CircleClock();<br>
