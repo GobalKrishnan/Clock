@@ -1,11 +1,11 @@
 
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.ImageIcon;<br>
+import javax.swing.JFrame; <br>
+import javax.swing.UIManager; <br>
+import javax.swing.UnsupportedLookAndFeelException ; <br>
 
-import gki.clock.CircleClock;
-import gki.clock.ClockListener;
+import gki.clock.CircleClock; <br>
+import gki.clock.ClockListener; <br>
 
 public class Test extends JFrame{
    public Test(){
@@ -41,7 +41,7 @@ public class Test extends JFrame{
         setTitle("Gobal Krishnan V");
 	    setDefaultCloseOperation(EXIT_ON_CLOSE);
 	    setSize(500,500);
-   }
+   } <br>
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
       
