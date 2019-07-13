@@ -10,7 +10,7 @@ import gki.clock.CircleClock;<br>
 import gki.clock.ClockListener;<br>
 
 public class Test extends JFrame { <br>
-   public Test(){ <br>
+   public Test() { <br>
 	   
 	   
 	    CircleClock c=new CircleClock();<br>
@@ -20,7 +20,7 @@ public class Test extends JFrame { <br>
 	   
 	    add(c);<br>
 	    
-	    c.addClockListener(new ClockListener() {<br>
+	    c.addClockListener ( new ClockListener() {<br>
 			
 			@Override<br>
 			public void time(int hour, int minute, int second, int milliSecond, String period) {<br>
@@ -36,7 +36,7 @@ public class Test extends JFrame { <br>
 			}<br>
 			
 			
-		});<br>
+		}) ;<br>
 	    
 	    setVisible(true);<br>
     	setIconImage(new ImageIcon(getClass().getResource("/gki/clock/logo.png")).getImage());<br>
@@ -44,16 +44,16 @@ public class Test extends JFrame { <br>
 	    setDefaultCloseOperation(EXIT_ON_CLOSE);<br>
 	    setSize(500,500);<br>
    }<br>
-	public static void main(String[] args) {<br>
-		// TODO Auto-generated method stub<br>
+	public static void main(String[] args) { <br>
+		// TODO Auto-generated method stub <br>
       
-		try {<br>
+		try { <br>
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());<br>
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException<br>
 				| UnsupportedLookAndFeelException e) {<br>
 			// TODO Auto-generated catch block<br>
 			e.printStackTrace();<br>
-		}<br>
+		} <br>
 		new Test();<br>
 	}<br>
 
